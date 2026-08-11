@@ -1,0 +1,47 @@
+.button {
+  font-family: "Roboto", Arial, sans-serif;
+  color: #000000;
+  cursor: pointer;
+  padding: 0px 30px;
+  display: inline-block;
+  margin: 10px 15px;
+  text-transform: uppercase;
+  line-height: 2em;
+  letter-spacing: 1.5px;
+  font-size: 1em;
+  outline: none;
+  position: relative;
+  font-size: 14px;
+  border: 3px solid #cfcece;
+  background-color: #ffffff;
+  border-radius: 15px 15px 15px 15px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.button:hover,
+.button.hover {
+  border-color: #2980b9;
+}
+.modal {
+  font-size: 12px;
+}
+.modal > .header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+}
+.modal > .actions {
+  margin: auto;
+}
+.modal > .actions {
+  width: 100%;
+  padding: 10px 5px;
+  text-align: center;
+}
+.width3per {
+  width: 3%;
+}

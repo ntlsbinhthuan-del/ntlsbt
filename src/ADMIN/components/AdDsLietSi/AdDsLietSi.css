@@ -1,0 +1,25 @@
+.Tablemargin{
+	margin-top: 20px;
+}
+#scrollbar::-webkit-scrollbar {
+    width: 5px;
+}
+#scrollbar::-webkit-scrollbar-track {
+   
+}
+ 
+#scrollbar::-webkit-scrollbar-thumb {
+  background:gray;
+  /*outline: 1px solid slategrey;*/
+   border-radius: 10px;
+}
+.DsLietSiHeight{
+	height: 60vh;
+	margin-left: 7px;
+}
+.width5per{
+	width: 5%;
+}
+.width3per{
+	width: 3%;
+}

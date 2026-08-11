@@ -1,0 +1,58 @@
+
+    .Profile{
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+        height: 85%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .ProfileBackground{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex: 5;
+        background-image: url("./bg.jpg");
+        border-radius: 10px 10px 0 0;
+    }
+    .positionAndPrintButton{
+        display: flex;
+        flex: 5;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: revert;
+    }
+    .PrintButton{
+        background-color: #015ba7;
+        border-radius: 0 0 10px 10px;
+        width: 100%;
+        padding: 10px;
+        font-weight: bold;
+        user-select: none;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .positionAndPrintButton{
+        color: #055ca4;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+@media only screen and (max-width: 767px) {
+    .Profile{
+        height: 60vh;
+    }
+    .PrintButton{
+        background-color: #015ba7;
+        border-radius: 0 0 10px 10px;
+        width: 100%;
+        padding: 10px;
+        font-weight: bold;
+        user-select: none;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+

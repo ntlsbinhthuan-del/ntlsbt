@@ -1,0 +1,21 @@
+.SearchBarmargin{
+    top: 0;
+    position: sticky;
+    z-index: 12;
+    border-radius: 0;
+}
+.Searchbarfontsize{
+  font-size: 15px;
+  height: 30px;
+}
+@media only screen and (min-width: 768px) {
+
+    .SearchBarmargin{
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+    .Searchbarfontsize{
+        font-size: 15px;
+        height: 30px;
+    }
+}

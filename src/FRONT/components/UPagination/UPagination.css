@@ -1,0 +1,25 @@
+.full {
+	width: 100%;
+  }
+  
+  .paginationFont {
+	font-size: 15px;
+  }
+  
+  .PaginationWrapper {
+	user-select: none;
+	width: 100%;
+	display: flex;
+	justify-content: center; /* Căn giữa các phần tử */
+  }
+  
+  .paginationItem {
+	background-color: #e6eef5; /* Màu nền xanh dương với độ trong suốt */
+	color: #3376ad; /* Màu chữ xanh khi không chọn */
+	flex: 1; /* Chiếm toàn bộ chiều ngang của div */
+	text-align: center; /* Căn giữa nội dung bên trong */
+  }
+  
+  .paginationItem.selected {
+	color: #002a4c; /* Màu chữ trắng khi chọn */
+  }

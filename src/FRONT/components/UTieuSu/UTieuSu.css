@@ -1,0 +1,12 @@
+.UTieusuButton {
+    background-color: #015ba7;
+    border-radius: 0 0 10px 10px;
+    padding: 10px;
+    font-weight: bold;
+    user-select: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.UTieusuButton:hover {
+    border-color: #0d6cb9;
+}

@@ -1,0 +1,22 @@
+.tieuSuButton {
+    font-family: "Roboto", Arial, sans-serif;
+    color: #ececec;
+    cursor: pointer;
+    padding: 0 18px;
+    display: inline-block;
+    margin: 10px 15px;
+    text-transform: uppercase;
+    line-height: 2em;
+    letter-spacing: 1.5px;
+    font-size: 14px;
+    outline: none;
+    position: relative;
+    border: 3px solid #cfcece;
+    background-color: #686868;
+    border-radius: 15px 15px 15px 15px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.tieuSuButton:hover {
+    border-color: #686868;
+}

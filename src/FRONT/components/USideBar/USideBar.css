@@ -1,0 +1,86 @@
+.HoVaTen{
+    font-size: 17px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.QueQuan{
+    margin-top: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+    #sideBar::-webkit-scrollbar {
+        width: 4px;
+    }
+    #sideBar::-webkit-scrollbar-track {
+
+    }
+    #sideBar::-webkit-scrollbar-thumb {
+        background: rgb(236, 236, 236);
+        /*outline: 1px solid slategrey;*/
+        border-radius: 10px;
+    }
+   .ListContainer{
+       display: flex;
+       flex-direction: column;
+       flex: 1;
+       height: 100%;
+       max-height: 100%;
+       align-items: flex-start;
+   }
+    .LietSi{
+        height:10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .choose:hover{
+        background-color: #cbeefb !important;
+        cursor: pointer;
+        user-select: none;
+        color: #00203a;
+    }
+    .choosen {
+        background-color: #cbeefb !important;
+        cursor: pointer;
+        user-select: none;
+        color: #00203a;
+    }
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    .ListContainer{
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1;
+        background-color: #4f4f50;
+        height: 100%;
+        overflow-y: auto;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .LietSi{
+        padding: 15px;
+        width: 100%;
+        display: inline-block;
+    }
+    .choose:hover{
+        background-color: #cbeefb !important;
+        cursor: pointer;
+        user-select: none;
+    }
+    .choosen {
+        background-color: #cbeefb !important;
+        cursor: pointer;
+        user-select: none;
+        color: #00203a;
+    }
+}

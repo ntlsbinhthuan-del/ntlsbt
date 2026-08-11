@@ -1,0 +1,14 @@
+body {
+    background-color:brown;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: static;
+    overflow: auto; /* Sử dụng auto để có thể cuộn khi cần */
+    scrollbar-width: none; /* Firefox */
+}
+body::-webkit-scrollbar {
+    width: 0px; /* Ẩn thanh cuộn trên Chrome, Safari, Opera */
+}
