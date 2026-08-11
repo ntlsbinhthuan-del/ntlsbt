@@ -26,7 +26,7 @@ export const USideBar = ({
     }
 
     lietSiOnCurrentPage &&
-      lietSiOnCurrentPage.map((lietsi, index) => {
+      lietSiOnCurrentPage.forEach((lietsi, index) => {
         let currentLietSiStyle = "";
         if (lietsi && lietsi.mahoso === lietSiDangHienThi.mahoso) {
           currentLietSiStyle = "choosen";

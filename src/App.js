@@ -4,7 +4,7 @@ import { UserInterface } from "./FRONT/containers/UserInterface.js";
 import { fireBaseStore } from "./STORES/firebase.store.js";
 import { AdLoading } from "./ADMIN/components/AdLoading/AdLoading.js";
 import { AdInterface } from "./ADMIN/containers/AdInterface";
-import styles from "./App.css";
+import "./App.css";
 
 export const App = () => {
   const [isLoading, setisLoading] = useState(true);

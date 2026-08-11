@@ -68,10 +68,6 @@ export const UserInterface = () => {
   }
   const [isListVisible, setIsListVisible] = useState(false);
 
-  const toggleListVisibility = () => {
-    setIsListVisible(!isListVisible);
-  };
-
   const [activeTab, setActiveTab] = useState("home");
 
   const [activeTabmini, setActiveTabmini] = useState("home_mini");
@@ -294,6 +290,7 @@ export const UserInterface = () => {
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3583.8428468185416!2d108.19134971013099!3d11.097861353137954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31769854301fb233%3A0x35580cc304f361cf!2zTmdoxKlhIHRyYW5nIExp4buHdCBz4bu5IFThu4luaCBCw6xuaCBUaHXhuq1u!5e1!3m2!1svi!2s!4v1742651072849!5m2!1svi!2s"
                 className={styles["mapContainer"]}
+                title="Vi tri Nghia trang Liet si Binh Thuan"
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
@@ -332,6 +329,7 @@ export const UserInterface = () => {
                       <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3583.8428468185416!2d108.19134971013099!3d11.097861353137954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31769854301fb233%3A0x35580cc304f361cf!2zTmdoxKlhIHRyYW5nIExp4buHdCBz4bu5IFThu4luaCBCw6xuaCBUaHXhuq1u!5e1!3m2!1svi!2s!4v1742651072849!5m2!1svi!2s"
                         className={styles["mapContainer"]}
+                        title="Ban do gioi thieu Nghia trang Liet si Binh Thuan"
                         allowFullScreen
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"
@@ -445,6 +443,7 @@ export const UserInterface = () => {
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3583.8428468185416!2d108.19134971013099!3d11.097861353137954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31769854301fb233%3A0x35580cc304f361cf!2zTmdoxKlhIHRyYW5nIExp4buHdCBz4bu5IFThu4luaCBCw6xuaCBUaHXhuq1u!5e1!3m2!1svi!2s!4v1742651072849!5m2!1svi!2s"
               className={styles["mapContainer"]}
+              title="Ban do lien he Nghia trang Liet si Binh Thuan"
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
@@ -460,7 +459,7 @@ export const UserInterface = () => {
         }
       </div>
       <footer className={styles["footer"]}>
-          <p>© Thực hiện bởi <img src="./img/logo copy.png"/> Hội sinh viên trường Đại học Công nghệ Thông tin, ĐHQG-HCM</p>
+          <p>© Thực hiện bởi <img src="./img/logo copy.png" alt="Logo Hoi sinh vien UIT"/> Hội sinh viên trường Đại học Công nghệ Thông tin, ĐHQG-HCM</p>
         </footer>
     </div>
     </>
