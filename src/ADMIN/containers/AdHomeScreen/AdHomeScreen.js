@@ -6,7 +6,7 @@ import * as myConstClass from "../../../SHARED/constants.js";
 import { fireBaseStore } from "../../../STORES/firebase.store.js";
 import _ from "lodash";
 
-export const AdHomeScreen = (props) => {
+export const AdHomeScreen = ({ LoginorLogout }) => {
   const [CurrentPage, setCurrentPage] = useState(0);
   const [DanhSachLietSi, setDanhSachLietSi] = useState([]);
   const [isSorted, setIsSorted] = useState(true);
@@ -30,7 +30,7 @@ export const AdHomeScreen = (props) => {
     const authUserStream = fireBaseStore.authUserSubject.subscribe((user) => {
       if (!user) {
         console.log("authUser at HomeScreen", user);
-        props.LoginorLogout("logout");
+        LoginorLogout("logout");
       }
     });
 
@@ -38,7 +38,7 @@ export const AdHomeScreen = (props) => {
       authUserStream.unsubscribe();
       danhSachLietSiStream.unsubscribe();
     };
-  }, []);
+  }, [LoginorLogout]);
 
   function OnPageChoose(event) {
     setCurrentPage(parseInt(event.target.getAttribute("value"), 10));
@@ -155,7 +155,7 @@ export const AdHomeScreen = (props) => {
   return (
     <div className="tc">
       <AdSideBar
-        LoginorLogout={props.LoginorLogout}
+        LoginorLogout={LoginorLogout}
         DanhSachLietSi={DanhSachLietSi}
         SoLuongLietSi={DanhSachLietSi.length}
       />

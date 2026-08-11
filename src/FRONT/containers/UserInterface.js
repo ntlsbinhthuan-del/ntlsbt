@@ -66,7 +66,7 @@ export const UserInterface = () => {
       );
     }
   }
-  const [isListVisible, setIsListVisible] = useState(false);
+  const [isListVisible] = useState(false);
 
   const [activeTab, setActiveTab] = useState("home");
 

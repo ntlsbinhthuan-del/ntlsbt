@@ -14,7 +14,7 @@ export const AdTextEditor = ({ setTieusu, tieusu }) => {
 
       seteditorState(EditorState.createWithContent(rawContentFromStore));
     }
-  }, []);
+  }, [tieusu]);
 
   function setEditorState(value) {
     seteditorState(value);

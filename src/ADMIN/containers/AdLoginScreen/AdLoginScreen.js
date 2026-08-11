@@ -1,18 +1,18 @@
 import React, { useEffect } from "react";
 import { fireBaseStore } from "../../../STORES/firebase.store.js";
 
-export const AdLoginScreen = props => {
+export const AdLoginScreen = ({ LoginorLogout }) => {
   useEffect(() => {
     const authUserStream = fireBaseStore.authUserSubject.subscribe(user => {
       if (user) {
         console.log("authUser at LoginScreen", user);
-        props.LoginorLogout("login");
+        LoginorLogout("login");
       }
     });
     return () => {
       authUserStream.unsubscribe();
     };
-  }, []);
+  }, [LoginorLogout]);
 
   function login() {
     const email = document.getElementById("username").value;
@@ -20,7 +20,7 @@ export const AdLoginScreen = props => {
     fireBaseStore
       .doSignInWithEmailAndPassword(email, password)
       .then(authUser => {
-        props.LoginorLogout("login");
+        LoginorLogout("login");
       })
       .catch(err => {
         alert("Đăng nhập thất bại");
